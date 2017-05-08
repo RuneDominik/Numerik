@@ -20,4 +20,6 @@ while n<=35
   n = n + 5;
   end
 format short
+disp("Es zeigt sich die deutlich schnellere Konvergenz der letzten beiden Methoden")
+disp("verglichen mit der ersten.")
 disp("End task 2.1")
