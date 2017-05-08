@@ -1,4 +1,4 @@
-#programming task 2.2.
+#programming task 2.2
 disp("Task 2.2:")
 x = single(0.8 : 1e-4 : 1.2);
 figure(1);
