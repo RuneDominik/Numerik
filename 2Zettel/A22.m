@@ -1,4 +1,5 @@
 #programming task 2.2
+#Author: Dominik, Rune (183727) and Geyer, Felix (183640)
 disp("Task 2.2:")
 x = single(0.8 : 1e-4 : 1.2);
 figure(1);

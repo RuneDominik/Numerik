@@ -1,4 +1,5 @@
 #Programming task 2.1. For the exponential functions series expantion see "expsum.m".
+#Author: Dominik, Rune (183727) and Geyer, Felix (183640)
 disp("Task 2.1:")
 format long
 n = 5;
