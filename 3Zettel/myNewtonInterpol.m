@@ -1,4 +1,5 @@
-# Programm zur Interpolation mit dem Newton-Verfahren
+# Programm zur Interpolation mit dem Newton-Verfahren. Dieses Programm bestimmt
+# die Koeffizienten des Newton-Interploationspolynom
 function [c] = myNewtonInterpol(x, f)
 n = length(x);
 B(:,1) = transpose(f);

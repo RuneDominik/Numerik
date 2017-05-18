@@ -1,4 +1,5 @@
-# Programm zur Bestimmung der Newton-Basis
+# Programm zur rekursiven Auswertung der Newton-Basispolynome an einer Stelle x 
+# bei gegebenem Stützstellenvektor s
 function [n]= myNewtonBase(x, s)
 l = length(s);
 n = 1:l;
