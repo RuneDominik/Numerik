@@ -1,16 +1,10 @@
-function c = koeffizienten(x, y)
+function c = koeffizienten(f,s)
 % Steigungsschema zur Berechnung der Koeffizienten c_i
-	n = length(x);
-a(1) = y(1);
-for k = 1 : n - 1
-   d(k, 1) = (y(k+1) - y(k))/(x(k+1) - x(k));
-end
-for j = 2 : n - 1
-   for k = 1 : n - j
-      d(k, j) = (d(k+1, j - 1) - d(k, j - 1))/(x(k+j) - x(k));
-   end
-end
-d
-for j = 2 : n
-   a(j) = d(1, j-1)
+	c = f(s);
+	n = length(s);
+	for(i=2:n)
+		for(k=n:-1:i)
+			c(k) = (c(k)-c(k-1)) / (s(k)-s(k-i+1));
+		end
+	end
 end
