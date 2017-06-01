@@ -12,13 +12,9 @@ c
 f1 = @(x) 1./(1+25.*x.^2);
 f2 = @(x) exp(x);
 
-#Gitter berechnen:
+#Berechnen des Gitters:
 
-n=100
-g = 1:n
-for i = 0:n
-  g(i+1) = -1+(2*i)/n ;
-end
+g = stuetz(100);
 
 #Bestimmen der stückweisen Interpolation (bis n = 128)
 
@@ -53,3 +49,9 @@ endfor
 disp('Fehler der stückweisen Interpolation für 200 Stützstellen:')
     n=200;
     es = max(abs(f2(g) - myPiecewiseInterpol(f2(stuetz(n)),stuetz(n),g)))
+
+#Diskusion der Ergebnisse:
+#Es zeigen sich besonders bei der polynomiellen Interpolation der Runge-Funktion
+#riesige Fehler. Dies ist auf die Runge-Funktion an sich zurückzuführen. Jedoch liefert
+#Auch die stückweise Interpolation in beiden Fällen zu große Fehler. Es ist also von
+#Fehlern in der Implementierung auszugehen.
