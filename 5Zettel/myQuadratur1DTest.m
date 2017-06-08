@@ -1,4 +1,4 @@
-#Bekannte Quadraturgewichte für n=1,2,3
+#Bekannte Quadraturgewichte für n=1,2,3 aus dem Theorieteil
 w1 = [1/2 , 1/2];
 w2 = [1/6 , 4/6, 1/6];
 w3 = [1/8 , 3/8, 3/8, 1/8];
