@@ -1,8 +1,3 @@
-#Definieren der zu Integrierenden Funktion
-function y = testfunction (x)
-  y = 1./x^2;
-endfunction
-
 #Bekannte Quadraturgewichte für n=1,2,3
 w1 = [1/2 , 1/2];
 w2 = [1/6 , 4/6, 1/6];
@@ -14,7 +9,7 @@ x2 = [2/4 , 3/4 , 1];
 x3 = [1/2 , 2/3 , 5/6 , 1];
 
 #Function-Handle
-f = @testfunction;
+f = @(x) 1/x^2;
 
 #Quadratur
 disp("Trapezregel (n=1):")
