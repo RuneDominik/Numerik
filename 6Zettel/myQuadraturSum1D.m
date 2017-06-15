@@ -12,7 +12,7 @@ for i = 1:n
   endfor
 # Anpassung Gewichte
 for i = 1:n 
-  g(i) = (b-a)/N *w(i);
+  g(i) = (bk(i)-ak(i))/N *w(i);
   endfor
  # Quadratur mit bekannter Formel
  h = 0; 
