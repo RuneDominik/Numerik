@@ -17,7 +17,7 @@ for i = 1:n
  # Quadratur mit bekannter Formel
  h = 0; 
 for i = 1:N
-  for k = ak(i):bk(i)
+  for k = 1:n
       h(i) = g(k)*f(phi(k));
     endfor
   endfor

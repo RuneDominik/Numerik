@@ -5,4 +5,4 @@ a = 0.5;
 b = 1;
 f = @(x) 1/x^2;
 
-c = myQuadraturSum1D(f, w, p, a, b, N);
+c = myQuadraturSum1D(f, w, p, a, b, N)
