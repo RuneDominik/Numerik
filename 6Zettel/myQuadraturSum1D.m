@@ -3,7 +3,7 @@ h = (b-a)/N;
 # Teilintervalle bestimmen
 for i = 1:N
   ak(i) = a + (i-1)*h;
-  bk(i) = a + i*h; 
+  bk(i) = a + i*h;
   endfor
 # Anpassung der Stützstellen
 n = length(p);
@@ -12,7 +12,7 @@ for i = 1:n
   endfor
 # Anpassung Gewichte
 for i = 1:n 
-  g(i) = (b-a)/N *w(i)
+  g(i) = (b-a)/N *w(i);
   endfor
  # Quadratur mit bekannter Formel
  h = 0; 
