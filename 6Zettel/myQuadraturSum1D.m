@@ -14,11 +14,12 @@ for i = 1:n
 for i = 1:n 
   g(i) = (b-a)/N *w(i)
   endfor
- # Quadratur
- c = 0; 
+ # Quadratur mit bekannter Formel
+ h = 0; 
 for i = 1:N
   for k = ak(i):bk(i)
-      v = v + g(k)*f(phi(k));
+      h(i) = g(k)*f(phi(k));
     endfor
   endfor
+ v = sum(h);
 endfunction
